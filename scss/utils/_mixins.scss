@@ -1,0 +1,27 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin grid-template-areas($areas) {
+  grid-template-areas: $areas;
+}
+
+@mixin respond($device) {
+  $breakpoint: map-get($breakpoints, $device);
+
+  @if $breakpoint {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint '#{$device}' is not defined in the breakpoints map.";
+  }
+}

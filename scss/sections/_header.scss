@@ -1,0 +1,5 @@
+@use '../utils/mixins' as utils;
+
+.header {
+  @include utils.flex-center;
+}

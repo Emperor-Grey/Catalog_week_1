@@ -1,0 +1,14 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "sass --watch scss/main.scss:public/dist/style.css",
+    "build": "sass scss/main.scss:public/dist/style.css --style=compressed",
+    "production": "sass scss/main.scss:public/dist/style.css --style=compressed --no-source-map"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.81.0"
+  }
+}

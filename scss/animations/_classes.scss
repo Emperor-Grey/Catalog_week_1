@@ -1,0 +1,61 @@
+@use './keyframes';
+
+/* ************** */
+/*   Animations   */
+/* ************** */
+
+/*
+    * Fade: Basic, up, down, left, right.
+    * Flip: Up, down, left, right, full flip.
+    * Zoom: In, out.
+    * Slide: Up, down, left, right.
+    * Bounce: Subtle bounce.
+    * Pulse: Breathing effect.
+    * Swing: Oscillating rotation.
+    * Wobble: Horizontal wobble.
+  */
+
+.fade {
+  animation: fade 0.8s ease-out both;
+  -webkit-animation: fade 0.8s ease-out both;
+}
+
+.fade-up {
+  animation: fade-up 0.8s ease-out both;
+  -webkit-animation: fade-up 0.8s ease-out both;
+}
+
+.fade-down {
+  animation: fade-down 0.8s ease-out both;
+  -webkit-animation: fade-down 0.8s ease-out both;
+}
+
+.fade-left {
+  animation: fade-left 0.8s ease-out both;
+  -webkit-animation: fade-left 0.8s ease-out both;
+}
+
+.fade-right {
+  animation: fade-right 0.8s ease-out both;
+  -webkit-animation: fade-right 0.8s ease-out both;
+}
+
+.flip-up {
+  animation: flip-up 0.8s ease-out both;
+  -webkit-animation: flip-up 0.8s ease-out both;
+}
+
+.flip-down {
+  animation: flip-down 0.8s ease-out both;
+  -webkit-animation: flip-down 0.8s ease-out both;
+}
+
+.zoom-in {
+  animation: zoom-in 0.8s ease-out both;
+  -webkit-animation: zoom-in 0.8s ease-out both;
+}
+
+.zoom-out {
+  animation: zoom-out 0.8s ease-out both;
+  -webkit-animation: zoom-out 0.8s ease-out both;
+}
