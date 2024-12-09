@@ -6,15 +6,14 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 
-  transition: all 3s ease-in-out;
-  -webkit-transition: all 3s ease-in-out;
-  -moz-transition: all 3s ease-in-out;
-  -ms-transition: all 3s ease-in-out;
-  -o-transition: all 3s ease-in-out;
+  // transition: all 3s ease-in-out;
+  // -webkit-transition: all 3s ease-in-out;
+  // -moz-transition: all 3s ease-in-out;
+  // -ms-transition: all 3s ease-in-out;
+  // -o-transition: all 3s ease-in-out;
 }
 
 body {
-  overflow: hidden;
   overflow-x: hidden;
 
   /* IE and Edge */
@@ -22,9 +21,17 @@ body {
 
   /* Firefox */
   scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
 }
 
 *::-webkit-scrollbar {
   /* Chrome */
   display: none;
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+a {
+  text-decoration: none;
+  color: #553d67;
 }

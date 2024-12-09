@@ -14,14 +14,20 @@
   grid-template-areas: $areas;
 }
 
-@mixin respond($device) {
-  $breakpoint: map-get($breakpoints, $device);
+$breakpoints: (
+  'mobile': 360px,
+  'tablet': 900px,
+  'desktop': 1440px,
+);
 
-  @if $breakpoint {
-    @media (min-width: $breakpoint) {
+@mixin respond($breakpoint) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+  @if $breakpoint-value {
+    @media (min-width: $breakpoint-value) {
       @content;
     }
   } @else {
-    @error "Breakpoint '#{$device}' is not defined in the breakpoints map.";
+    @error "Invalid breakpoint: #{$breakpoint}";
   }
 }

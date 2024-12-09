@@ -1,5 +1,49 @@
-@use '../utils/mixins' as utils;
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
 
-.header {
-  @include utils.flex-center;
+.header__menu {
+  display: none;
+}
+
+@media (min-width: 890px) {
+  .header__nav-menu--mobile {
+    display: none;
+  }
+
+  .header__nav-img {
+    width: 100%;
+    height: 7rem;
+  }
+
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__menu {
+    display: flex;
+
+    .header__menu-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      padding: 1rem;
+    }
+
+    .header__menu-links > li {
+      list-style-type: none;
+      font-family: 'Open sans', serif;
+    }
+  }
+}
+
+@media (min-width: 1430px) {
+  .header__nav-img {
+    height: 8rem;
+  }
 }

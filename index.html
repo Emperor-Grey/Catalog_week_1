@@ -8,21 +8,191 @@
       name="description"
       content="Simple Landing page, Made for an internship..."
     />
-    <link rel="stylesheet" href="./public/dist/style.css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./public/dist/style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header Section -->
-    <header class="header fade-down">
-      <nav></nav>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav-logo">
+          <img
+            class="header__nav-img"
+            src="./assets/svgs/logo.svg"
+            alt="Website logo"
+          />
+        </div>
+
+        <div class="header__nav-menu--mobile">
+          <img
+            class="header__nav-menuIcon"
+            src="./assets/svgs/menu-icon.svg"
+            alt="Menu Icon"
+          />
+        </div>
+
+        <div class="header__menu">
+          <ul class="header__menu-links">
+            <li><a class="header__nav-link" href="#home">Home</a></li>
+            <li><a class="header__nav-link" href="#about">About</a></li>
+            <li><a class="header__nav-link" href="#services">Services</a></li>
+            <li><a class="header__nav-link" href="#team">Team</a></li>
+            <li><a class="header__nav-link" href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <!-- Hero Section -->
-    <main class="hero"></main>
+    <main class="hero">
+      <div class="hero__content">
+        <div class="hero__content-body">
+          <h1 class="hero__content-title">
+            Instant collaboration for productive projects
+          </h1>
+          <p class="hero__content-desc">
+            We are full-service software company that specializes in developing
+            complex web solutions
+          </p>
+        </div>
+        <div class="hero__content-bottom">
+          <input
+            class="hero__content-bottomInp"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Email"
+          />
+          <button class="hero__content-btn">Get in touch</button>
+        </div>
+      </div>
+    </main>
 
-    <!-- Other Sections -->
-    <section class="section"></section>
+    <section class="about">
+      <div class="about__section">
+        <h2 class="about__section-heading">ABOUT US</h2>
+        <p class="about__section-descOne">
+          TechnoFevers is a full service software development company that
+          specializes in developing complex web solutions.we are focused on
+          designing and developing customer-centric products and applications
+          for startups to elite business group across the globe.
+        </p>
+        <p class="about__section-descTwo">
+          We build the foundation for cognitive business by working with complex
+          technologies and rapidly evolving business environment to offer
+          project performance optimization.
+        </p>
+
+        <div class="about__progress">
+          <div class="line"></div>
+          <div class="about__progress-content">
+            <img
+              class="about__progress-contentTick"
+              src="./assets/svgs/tick.svg"
+              alt="Tick icon"
+            />
+            <p class="about__progress-desc">WE ARE PASSIONATE</p>
+          </div>
+
+          <div class="about__progress-content">
+            <img
+              class="about__progress-contentTick"
+              src="./assets/svgs/tick.svg"
+              alt="Tick icon"
+            />
+            <p class="about__progress-desc">HONEST DEPENDABLE</p>
+          </div>
+
+          <div class="about__progress-content">
+            <img
+              class="about__progress-contentTick"
+              src="./assets/svgs/tick.svg"
+              alt="Tick icon"
+            />
+            <p class="about__progress-desc">ALWAYS IMPROVING</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="cards__section">
+        <div class="cards__section-card">
+          <img
+            class="card__section-icon"
+            src="./assets/svgs/icon-1.svg"
+            alt="Icon-1"
+          />
+          <h3 class="card__section-title">Updated knowledge</h3>
+          <p class="card__section-desc">
+            They all live tidily together in teams. with your team and
+            information in
+          </p>
+        </div>
+        <div class="cards__section-card">
+          <img
+            class="card__section-icon"
+            src="./assets/svgs/icon-2.svg"
+            alt="Icon-1"
+          />
+          <h3 class="card__section-title">Updated knowledge</h3>
+          <p class="card__section-desc">
+            They all live tidily together in teams. with your team and
+            information in
+          </p>
+        </div>
+        <div class="cards__section-card">
+          <img
+            class="card__section-icon"
+            src="./assets/svgs/icon-3.svg"
+            alt="Icon-1"
+          />
+          <h3 class="card__section-title">Updated knowledge</h3>
+          <p class="card__section-desc">
+            They all live tidily together in teams. with your team and
+            information in
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <div class="achievements__section">
+        <div>
+          <h3 class="achievements__section-title">OUR ACHIEVEMENTS</h3>
+          <p class="achievements__section-desc">
+            They all live tidily together in teams. with your team and
+            information in wefocus on all round deveopment of individuals and
+            part in co-curricular activities.
+          </p>
+        </div>
+        <div class="achievements__section-details">
+          <div class="achievements__card">
+            <h3 class="achievements__card-num">800</h3>
+            <p class="achievements__card-details">WORKING</p>
+          </div>
+          <div class="achievements__card">
+            <h3 class="achievements__card-num">975</h3>
+            <p class="achievements__card-details">COMPANY</p>
+          </div>
+          <div class="achievements__card">
+            <h3 class="achievements__card-num">738</h3>
+            <p class="achievements__card-details">COLLABORATES</p>
+          </div>
+          <div class="achievements__card">
+            <h3 class="achievements__card-num">564</h3>
+            <p class="achievements__card-details">PROJECTS</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="footer"></footer>
-  <body>
+    <body></body>
+  </body>
 </html>

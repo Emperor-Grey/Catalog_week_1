@@ -1,1 +1,91 @@
-@use '../utils/mixins' as utils;
+.hero {
+  background-image: url('../../assets/images/hero-background.png');
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.hero__content-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  font-family: 'Mulish', sans-serif;
+  padding: 1rem;
+}
+
+.hero__content-desc {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-wrap: balance;
+
+  font-family: 'Open sans', serif;
+}
+
+.hero__content-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 3rem;
+  gap: 1rem;
+
+  .hero__content-bottomInp {
+    border: none;
+    padding: 1rem;
+    width: min-max(50%, 60%);
+  }
+
+  .hero__content-bottomInp::placeholder {
+    color: #bbc8d4;
+  }
+
+  .hero__content-btn {
+    background-color: #f64c72;
+    border: none;
+    color: white;
+    padding: 1rem;
+  }
+}
+
+.hero__content {
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 898px) {
+  .hero__content {
+    padding: 5rem;
+  }
+
+  .hero__content-bottom {
+    flex-direction: row;
+  }
+
+  // .hero__content-bottomInp {
+  //   width: 40%;
+  // }
+
+  .hero__content-body {
+    padding: 0 7rem;
+  }
+}
+
+@media (min-width: 1430px) {
+  .hero__content-title {
+    text-wrap: balance;
+    font-size: 4rem;
+  }
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .hero__content-desc {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-wrap: balance;
+  }
+
+  .hero__content {
+    padding: 6rem;
+  }
+}
