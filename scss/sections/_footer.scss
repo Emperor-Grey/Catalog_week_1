@@ -1,0 +1,39 @@
+$primary-font: 'Open sans', serif;
+$footer-padding-small: 3rem;
+$footer-padding-large: 4rem;
+$footer-gap: 2rem;
+$icon-gap: 1rem;
+
+.footer {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $footer-padding-small;
+    gap: $footer-gap;
+    text-align: center;
+    align-items: center;
+
+    @media (min-width: 890px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1430px) {
+      padding: $footer-padding-large 7rem;
+    }
+  }
+
+  &__section-text {
+    font-size: 0.8rem;
+    font-family: $primary-font;
+    padding: 1rem;
+  }
+
+  &__section-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $icon-gap;
+  }
+}

@@ -1,62 +1,74 @@
-.what__section-title {
-  color: #553d67;
-  width: fit-content;
-  font-size: 2rem;
-  margin: 0 auto;
-  font-family: 'Mulish', sans-serif;
-  text-decoration: underline;
-  text-underline-offset: 0.6rem;
-  text-decoration-thickness: 2px;
-  text-decoration-color: #f64c72;
-  -moz-text-decoration-color: #f64c72;
-}
+$primary-color: #f64c72;
+$secondary-color: #553d67;
+$text-color: #495c76b2;
+$font-primary: 'Mulish', sans-serif;
+$font-secondary: 'Open sans', serif;
+$card-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15), 0px 4px 6px rgba(0, 0, 0, 0.1);
+$font-size-title: 2rem;
+$font-size-heading: 1.2rem;
+$font-size-desc: 1rem;
+$section-padding: 2rem 1rem;
+$card-padding: 1rem;
+$gap: 1rem;
+$max-card-width: 100%;
 
-.what__section {
-  padding: 2rem 0;
-}
+.what {
+  &__section {
+    padding: 2rem 0;
 
-.what__section-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 2rem 1rem;
-}
+    &-title {
+      color: $secondary-color;
+      width: fit-content;
+      font-size: $font-size-title;
+      margin: 0 auto;
+      font-family: $font-primary;
+      text-decoration: underline;
+      text-underline-offset: 0.6rem;
+      text-decoration-thickness: 2px;
+      text-decoration-color: $primary-color;
+      -moz-text-decoration-color: $primary-color;
+    }
 
-.what__card-heading {
-  font-family: 'Mulish', sans-serif;
-  font-size: 1.2rem;
-  padding: 1rem;
-  color: #553d67;
-}
+    &-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: $gap;
+      padding: $section-padding;
 
-.what__card-desc {
-  color: #495c76b2;
-  opacity: 0.7;
-  font-size: 1rem;
-  font-family: 'Open sans', serif;
-}
+      @media (min-width: 890px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 1.2rem;
+        padding: 2rem 4rem;
+      }
 
-.what__section-card {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15), 0px 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin: 0 auto;
-  padding: 1rem;
-  background-color: white;
-}
+      @media (min-width: 1430px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 2rem 8rem;
+      }
+    }
 
-@media (min-width: 890px) {
-  .what__section-cards {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 1.2rem;
-    padding: 2rem 4rem;
-  }
-}
+    &-card {
+      box-shadow: $card-shadow;
+      text-align: center;
+      margin: 0 auto;
+      padding: $card-padding;
+      background-color: white;
+    }
 
-@media (min-width: 1430px) {
-  .what__section-cards {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 2rem 8rem;
+    .what__card-heading {
+      font-family: $font-primary;
+      font-size: $font-size-heading;
+      padding: 1rem;
+      color: $secondary-color;
+    }
+
+    .what__card-desc {
+      color: $text-color;
+      opacity: 0.7;
+      font-size: $font-size-desc;
+      font-family: $font-secondary;
+    }
   }
 }

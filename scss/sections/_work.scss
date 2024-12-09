@@ -1,0 +1,65 @@
+$primary-color: #f64c72;
+$secondary-color: white;
+$text-color: #495c76b2;
+$font-primary: 'Mulish', sans-serif;
+$font-secondary: 'Open sans', serif;
+$font-size-heading: 2.3rem;
+$font-size-desc: 1rem;
+$font-size-desc-lg: 1.1rem;
+$padding-section: 5rem 1rem;
+$padding-section-lg: 4rem 8rem;
+$padding-section-xl: 1rem 16rem;
+$input-width-sm: 20%; // Adjust this for the smaller screen size
+
+.work {
+  &__section {
+    background-color: $primary-color;
+    text-align: center;
+    color: $secondary-color;
+    padding: $padding-section;
+  }
+
+  // &__section-content {
+  //   // No changes, based on HTML provided
+  // }
+
+  &__content {
+    &-heading {
+      font-family: $font-primary;
+      font-weight: 600;
+      font-size: $font-size-heading;
+    }
+
+    &-desc {
+      font-family: $font-secondary;
+      font-size: $font-size-desc;
+      padding: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    &-inp {
+      padding: 1rem;
+    }
+
+    @media (min-width: 890px) {
+      padding: $padding-section-lg;
+
+      &-heading {
+        font-size: 3rem;
+        padding: 1rem 0;
+      }
+
+      &-desc {
+        font-size: $font-size-desc-lg;
+      }
+
+      &-inp {
+        width: $input-width-sm;
+      }
+    }
+
+    @media (min-width: 1430px) {
+      padding: $padding-section-xl;
+    }
+  }
+}

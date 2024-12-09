@@ -1,75 +1,74 @@
+$primary-bg-color: #f64c72;
+$font-mulish: 'Mulish', sans-serif;
+$font-open-sans: 'Open Sans', serif;
+
 .achievements {
   z-index: -10;
-  background-color: #f64c72;
+  background-color: $primary-bg-color;
   margin-top: -8rem;
-}
 
-.achievements__section {
-  text-align: center;
-  color: white;
-  padding: 10rem 1rem 6rem;
-}
+  .achievements__section {
+    text-align: center;
+    color: white;
+    padding: 10rem 1rem 6rem;
 
-.achievements__section-title {
-  font-family: 'Mulish', sans-serif;
-  font-weight: 700;
+    .achievements__section-title {
+      font-family: $font-mulish;
+      font-weight: 700;
+      font-size: 1.7rem;
+    }
 
-  font-size: 1.7rem;
-}
+    .achievements__section-desc {
+      padding: 1rem;
+      font-family: $font-open-sans;
+      font-weight: 600;
+    }
 
-.achievements__section-desc {
-  padding: 1rem;
-  font-family: 'Open sans', serif;
-  font-weight: 600;
-}
+    .achievements__section-details {
+      display: grid;
+      padding: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1rem;
 
-.achievements__section-details {
-  display: grid;
-  padding: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
-}
+      .achievements__card-num {
+        font-size: 2rem;
+        font-family: $font-mulish;
+        font-weight: 700;
+      }
 
-.achievements__card-num {
-  font-size: 2rem;
-  font-family: 'Mulish', sans-serif;
-  font-weight: 700;
-}
+      .achievements__card-details {
+        font-size: 0.8rem;
+        font-family: $font-open-sans;
+        font-weight: 600;
+      }
+    }
+  }
 
-.achievements__card-details {
-  font-size: 0.8rem;
-  font-family: 'Open sans', serif;
-  font-weight: 600;
-}
-
-@media (min-width: 890px) {
-  .achievements {
+  @media (min-width: 890px) {
     padding: 3rem;
+
+    .achievements__section-title {
+      font-size: 3rem;
+    }
+
+    .achievements__section-desc {
+      font-size: 1.2rem;
+      text-wrap: balance;
+    }
+
+    .achievements__section-details {
+      padding-top: 2rem;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 0;
+    }
   }
 
-  .achievements__section-title {
-    font-size: 3rem;
-  }
-
-  .achievements__section-desc {
-    font-size: 1.2rem;
-    text-wrap: balance;
-  }
-
-  .achievements__section-details {
-    padding-top: 2rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0;
-  }
-}
-
-@media (min-width: 1440px) {
-  .achievements {
+  @media (min-width: 1440px) {
     padding: 2rem;
-  }
 
-  .achievements__section-details {
-    padding-top: 2rem;
+    .achievements__section-details {
+      padding-top: 2rem;
+    }
   }
 }

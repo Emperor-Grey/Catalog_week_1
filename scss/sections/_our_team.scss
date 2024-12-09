@@ -1,0 +1,139 @@
+$primary-color: #f64c72;
+$secondary-color: #553d67;
+$card-background-color: #fff;
+$text-color-light: #555;
+$text-color-muted: #888;
+$font-primary: 'Mulish', sans-serif;
+$font-secondary: 'Open sans', serif;
+$card-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+$card-radius: 0 0 0.8rem 0.8rem;
+$font-size-heading: 2rem;
+$font-size-title: 1rem;
+$font-size-role: 0.6rem;
+$font-size-desc: 0.8rem;
+$font-size-next-text: 1.2rem;
+$section-padding: 2rem;
+$card-padding: 1rem;
+$card-width: 18rem;
+$scroll-gap: 1.2rem;
+
+.our_team {
+  &__section {
+    padding: $section-padding;
+  }
+
+  &__section-heading {
+    color: $secondary-color;
+    width: fit-content;
+    font-size: $font-size-heading;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: $font-primary;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 2px;
+    text-decoration-color: $primary-color;
+    -moz-text-decoration-color: $primary-color;
+  }
+
+  &__cards-next {
+    display: none;
+  }
+
+  &__cards-card {
+    width: $card-width;
+    overflow: hidden;
+    box-shadow: $card-shadow;
+    background: $card-background-color;
+    margin: 1.2rem auto;
+    border-radius: $card-radius;
+
+    .our_team__card-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .our_team__card-content {
+      padding: $card-padding;
+
+      .our_team__card-title {
+        font-size: $font-size-title;
+        font-weight: 600;
+        font-family: $font-primary;
+        color: $secondary-color;
+        margin: 0 0 0.4rem;
+      }
+
+      .our_team__card-role {
+        font-size: $font-size-role;
+        font-family: $font-primary;
+        font-weight: 600;
+        color: $text-color-muted;
+        margin: 0 0 0.6rem;
+      }
+
+      .our_team__card-desc {
+        line-height: 1.6;
+        color: $text-color-light;
+        font-family: $font-secondary;
+        font-weight: 400;
+        font-size: $font-size-desc;
+        margin: 0;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    padding: 1rem 3rem;
+    scroll-behavior: smooth;
+    gap: $scroll-gap;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .our_team__cards-card {
+      flex: 0 0 $card-width;
+    }
+
+    .our_team__next-text {
+      font-size: $font-size-next-text;
+      font-family: $font-secondary;
+      font-weight: 600;
+    }
+
+    &__next {
+      display: flex;
+      gap: 1rem;
+      color: $secondary-color;
+      justify-content: end;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 890px) {
+  .our_team {
+    &__cards {
+      padding: 1rem 3rem;
+    }
+
+    .our_team__cards-next {
+      display: flex;
+      gap: 1rem;
+      color: $secondary-color;
+      justify-content: end;
+      align-items: center;
+    }
+
+    .our_team__cards-card {
+      flex: 0 0 $card-width;
+    }
+  }
+}

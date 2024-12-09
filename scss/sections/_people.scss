@@ -1,0 +1,96 @@
+$primary-color: #f64c72;
+$secondary-color: #553d67;
+$text-color: #6d7d8b;
+$font-primary: 'Mulish', sans-serif;
+$font-secondary: 'Open sans', serif;
+$card-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15), 0px 4px 6px rgba(0, 0, 0, 0.1);
+$font-size-heading: 1.2rem;
+$font-size-title: 1rem;
+$font-size-desc: 0.8rem;
+$font-size-card-desc: 1rem;
+$card-padding: 3rem 1rem;
+$section-padding: 2rem 1rem;
+$gap: 1.2rem;
+$max-card-width: 20rem;
+
+.people {
+  padding: $section-padding;
+
+  &__section-heading {
+    color: $secondary-color;
+    width: fit-content;
+    font-size: $font-size-heading;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: $section-padding;
+    font-family: $font-primary;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 2px;
+    text-decoration-color: $primary-color;
+    -moz-text-decoration-color: $primary-color;
+  }
+
+  &__section-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: $gap;
+    padding: $section-padding;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__section-card {
+    flex-shrink: 0;
+    max-width: $max-card-width;
+    padding: $card-padding;
+    box-shadow: $card-shadow;
+  }
+
+  &__card-desc {
+    font-size: $font-size-card-desc;
+    font-family: $font-secondary;
+    color: $text-color;
+    padding: 2rem 0;
+  }
+
+  &__card-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__info-name {
+    color: $text-color;
+    font-family: $font-secondary;
+    font-size: $font-size-title;
+  }
+
+  &__info-desc {
+    color: $text-color;
+    font-size: $font-size-desc;
+    font-family: $font-secondary;
+    font-weight: 400;
+  }
+
+  &__section-arrows {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 890px) {
+  .people__section-heading {
+    font-size: 3rem;
+  }
+}
