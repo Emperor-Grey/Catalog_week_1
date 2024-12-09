@@ -71,7 +71,7 @@
     width: 100%;
     height: 1px;
     background-color: #553d67;
-    z-index: -2;
+    z-index: -8;
   }
 
   .about__progress-desc {
@@ -92,6 +92,10 @@
     -moz-transform: translateY(-30%);
     -ms-transform: translateY(-30%);
     -o-transform: translateY(-30%);
+  }
+
+  .about__progress {
+    position: relative;
   }
 
   .about__section {

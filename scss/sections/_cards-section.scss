@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   text-align: center;
+  z-index: 20;
   padding: 1rem;
   gap: 1rem;
 }
@@ -12,6 +13,7 @@
   width: mix-max(387px, auto);
   margin: 0 auto;
   padding: 3rem;
+  background-color: white;
 }
 
 .card__section-title {
