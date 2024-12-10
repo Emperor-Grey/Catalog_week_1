@@ -67,6 +67,8 @@
 
     .achievements__section-details {
       padding-top: 2rem;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 0;
     }
   }
 }
