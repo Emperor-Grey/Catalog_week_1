@@ -1,14 +1,14 @@
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 .footer {
   &__section {
-    display: flex;
+    @include flex-center;
+
     flex-direction: column;
-    justify-content: center;
     padding: $footer-padding-small;
     gap: $footer-gap;
     text-align: center;
-    align-items: center;
 
     @media (min-width: 890px) {
       flex-direction: row;
@@ -27,9 +27,7 @@
   }
 
   &__section-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     gap: $icon-gap;
   }
 }

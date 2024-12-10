@@ -1,14 +1,14 @@
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 .mission {
   &__section {
+    @include flex-between;
+
     background-color: $primary-color;
     color: $white-color;
     text-align: center;
     padding: $section-padding-small;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     @media (min-width: 900px) {
       padding: $section-padding-small $section-padding-large;
