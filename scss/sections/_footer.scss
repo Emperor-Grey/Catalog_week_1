@@ -1,8 +1,4 @@
-$primary-font: 'Open sans', serif;
-$footer-padding-small: 3rem;
-$footer-padding-large: 4rem;
-$footer-gap: 2rem;
-$icon-gap: 1rem;
+@use '../utils/variables' as *;
 
 .footer {
   &__section {
@@ -26,7 +22,7 @@ $icon-gap: 1rem;
 
   &__section-text {
     font-size: 0.8rem;
-    font-family: $primary-font;
+    font-family: $font-secondary;
     padding: 1rem;
   }
 

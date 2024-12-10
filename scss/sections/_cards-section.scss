@@ -1,8 +1,4 @@
-$primary-color: #f64c72;
-$secondary-color: #553d67;
-$tertiary-color: #495c76b2;
-$font-mulish: 'Mulish', sans-serif;
-$font-open-sans: 'Open sans', serif;
+@use '../utils/variables' as *;
 
 .cards {
   &__section {
@@ -35,7 +31,7 @@ $font-open-sans: 'Open sans', serif;
 
   &__section-title {
     color: $secondary-color;
-    font-family: $font-mulish;
+    font-family: $font-primary;
     font-weight: 400;
     font-size: 1.2rem;
     padding: 0.5rem;
@@ -44,7 +40,7 @@ $font-open-sans: 'Open sans', serif;
   &__section-desc {
     color: $tertiary-color;
     opacity: 0.7;
-    font-family: $font-open-sans;
+    font-family: $font-secondary;
     font-size: 1rem;
   }
 }

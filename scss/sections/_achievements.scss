@@ -1,10 +1,8 @@
-$primary-bg-color: #f64c72;
-$font-mulish: 'Mulish', sans-serif;
-$font-open-sans: 'Open Sans', serif;
+@use '../utils/variables' as *;
 
 .achievements {
   z-index: -10;
-  background-color: $primary-bg-color;
+  background-color: $primary-color;
   margin-top: -8rem;
 
   .achievements__section {
@@ -13,14 +11,14 @@ $font-open-sans: 'Open Sans', serif;
     padding: 10rem 1rem 6rem;
 
     .achievements__section-title {
-      font-family: $font-mulish;
+      font-family: $font-primary;
       font-weight: 700;
       font-size: 1.7rem;
     }
 
     .achievements__section-desc {
       padding: 1rem;
-      font-family: $font-open-sans;
+      font-family: $font-secondary;
       font-weight: 600;
     }
 
@@ -33,13 +31,13 @@ $font-open-sans: 'Open Sans', serif;
 
       .achievements__card-num {
         font-size: 2rem;
-        font-family: $font-mulish;
+        font-family: $font-primary;
         font-weight: 700;
       }
 
       .achievements__card-details {
         font-size: 0.8rem;
-        font-family: $font-open-sans;
+        font-family: $font-secondary;
         font-weight: 600;
       }
     }

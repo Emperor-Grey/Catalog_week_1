@@ -2,7 +2,73 @@
 /* Global Variables */
 /* **************** */
 
-$primary: '';
+// Colors
+$primary-color: #f64c72;
+$secondary-color: #553d67;
+$tertiary-color: #495c76b2;
+$text-color: #495c76b2;
+$text-color-light: #6d7d8b;
+$text-color-muted: #888;
+$light-text-color: #bbc8d4;
+$white-color: #ffffff;
+$card-background-color: #ffffff;
+
+// Fonts
+$font-primary: 'Mulish', sans-serif;
+$font-secondary: 'Open Sans', serif;
+
+// Font Sizes
+$font-size-small: 1rem;
+$font-size-medium: 1.3rem;
+$font-size-large: 2rem;
+$font-size-title: 2rem;
+$font-size-heading: 2.3rem;
+$font-size-desc: 1rem;
+$font-size-desc-lg: 1.1rem;
+$font-size-card-desc: 1rem;
+
+// Spacing
+$section-padding-small: 3rem;
+$section-padding-large: 14rem;
+$section-padding-xlarge: 0;
+$section-padding: 2rem 1rem;
+$padding-section: 5rem 1rem;
+$padding-section-lg: 4rem 8rem;
+$padding-section-xl: 1rem 16rem;
+$gap: 1rem;
+$footer-padding-small: 3rem;
+$footer-padding-large: 4rem;
+$footer-gap: 2rem;
+$icon-gap: 1rem;
+$nav-padding: 1.2rem;
+$menu-gap: 3rem;
+
+// Hero Section
+$hero-padding-small: 2rem 1rem;
+$hero-padding-large: 5rem;
+$hero-padding-xlarge: 6rem;
+$hero-title-size-small: 2.6rem;
+$hero-title-size-large: 4rem;
+$hero-desc-size-small: 0.8rem;
+$hero-desc-size-large: 1.5rem;
+$hero-input-width-small: min-max(50%, 60%);
+$hero-input-width-large: 40%;
+
+// Buttons
+$btn-padding: 1rem 3rem;
+$btn-radius: 0.4rem;
+
+// Card
+$card-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15), 0px 4px 6px rgba(0, 0, 0, 0.1);
+$card-padding: 1rem;
+$max-card-width: 100%;
+
+// Images
+$img-small-height: 7rem;
+$img-large-height: 8rem;
+
+// Inputs
+$input-width-sm: 20%;
 
 // Breakpoint's
 $breakpoints: (

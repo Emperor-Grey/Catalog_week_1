@@ -1,15 +1,4 @@
-$primary-color: #f64c72;
-$white-color: white;
-$font-primary: 'Mulish', sans-serif;
-$btn-padding: 1rem 3rem;
-$btn-radius: 0.4rem;
-$font-size-small: 1rem;
-$font-size-medium: 1.3rem;
-$font-size-large: 2rem;
-$section-padding-small: 3rem;
-$section-padding-large: 14rem;
-$section-padding-xlarge: 0;
-$section-img-display-large: flex;
+@use '../utils/variables' as *;
 
 .mission {
   &__section {
@@ -34,7 +23,7 @@ $section-img-display-large: flex;
     display: none;
 
     @media (min-width: 1430px) {
-      display: $section-img-display-large;
+      display: flex;
     }
   }
 

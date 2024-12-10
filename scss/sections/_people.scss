@@ -1,18 +1,11 @@
-$primary-color: #f64c72;
-$secondary-color: #553d67;
-$text-color: #6d7d8b;
-$font-primary: 'Mulish', sans-serif;
-$font-secondary: 'Open sans', serif;
-$card-shadow: 0px 10px 15px 0px rgba(101, 90, 90, 0.25);
-
+@use '../utils/variables' as *;
 $font-size-heading: 1.2rem;
 $font-size-title: 1rem;
 $font-size-desc: 0.8rem;
-$font-size-card-desc: 1rem;
 $card-padding: 3rem 1rem;
-$section-padding: 2rem 1rem;
 $gap: 1.2rem;
 $max-card-width: 20rem;
+$card-shadow: 0px 10px 15px 0px rgba(101, 90, 90, 0.25);
 
 .people {
   padding: $section-padding;
@@ -58,7 +51,7 @@ $max-card-width: 20rem;
   &__card-desc {
     font-size: $font-size-card-desc;
     font-family: $font-secondary;
-    color: $text-color;
+    color: $text-color-light;
     padding: 2rem 0;
   }
 
@@ -70,13 +63,13 @@ $max-card-width: 20rem;
   }
 
   &__info-name {
-    color: $text-color;
+    color: $text-color-light;
     font-family: $font-secondary;
     font-size: $font-size-title;
   }
 
   &__info-desc {
-    color: $text-color;
+    color: $text-color-light;
     font-size: $font-size-desc;
     font-family: $font-secondary;
     font-weight: 400;

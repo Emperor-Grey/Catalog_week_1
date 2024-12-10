@@ -1,8 +1,4 @@
-$primary-color: #f64c72;
-$secondary-color: #553d67;
-$tertiary-color: #6d7d8b;
-$font-mulish: 'Mulish', sans-serif;
-$font-open-sans: 'Open sans', serif;
+@use '../utils/variables' as *;
 
 .about {
   .about__section {
@@ -17,7 +13,7 @@ $font-open-sans: 'Open sans', serif;
       color: $secondary-color;
       width: fit-content;
       margin: 0 auto;
-      font-family: $font-mulish;
+      font-family: $font-primary;
       text-decoration: underline;
       text-underline-offset: 0.6rem;
       text-decoration-thickness: 2px;
@@ -27,7 +23,7 @@ $font-open-sans: 'Open sans', serif;
 
     .about__section-descOne,
     .about__section-descTwo {
-      font-family: $font-open-sans;
+      font-family: $font-secondary;
       padding: 2rem 0;
     }
 
@@ -39,7 +35,7 @@ $font-open-sans: 'Open sans', serif;
   .about__progress {
     display: none;
 
-    @media (min-width: 890px) {
+    @media (min-width: 898px) {
       position: relative;
       display: flex;
       justify-content: space-around;
@@ -47,7 +43,7 @@ $font-open-sans: 'Open sans', serif;
     }
   }
 
-  @media (min-width: 890px) {
+  @media (min-width: 898px) {
     .about__section-descOne,
     .about__section-descTwo {
       padding: 2rem 7.5rem;
@@ -86,20 +82,19 @@ $font-open-sans: 'Open sans', serif;
     .about__progress-desc {
       color: $tertiary-color;
       font-size: 1rem;
-      font-family: $font-open-sans;
+      font-family: $font-secondary;
       text-align: center;
       margin-top: 0.5rem;
     }
   }
 
-  @media (min-width: 1430px) {
-    padding: 1rem 16rem;
-    padding-bottom: 0;
-    transform: translateY(-30%);
-    -webkit-transform: translateY(-30%);
-    -moz-transform: translateY(-30%);
-    -ms-transform: translateY(-30%);
-    -o-transform: translateY(-30%);
+  @media (min-width: 1438px) {
+    padding: 1rem 22rem 0;
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
 
     .about__progress {
       position: relative;

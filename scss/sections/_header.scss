@@ -1,8 +1,4 @@
-$primary-font: 'Open sans', serif;
-$nav-padding: 1.2rem;
-$menu-gap: 3rem;
-$img-small-height: 7rem;
-$img-large-height: 8rem;
+@use '../utils/variables' as *;
 
 .header {
   &__nav {
@@ -25,7 +21,7 @@ $img-large-height: 8rem;
 
       > li {
         list-style-type: none;
-        font-family: $primary-font;
+        font-family: $font-secondary;
       }
     }
   }

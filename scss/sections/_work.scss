@@ -1,27 +1,12 @@
-$primary-color: #f64c72;
-$secondary-color: white;
-$text-color: #495c76b2;
-$font-primary: 'Mulish', sans-serif;
-$font-secondary: 'Open sans', serif;
-$font-size-heading: 2.3rem;
-$font-size-desc: 1rem;
-$font-size-desc-lg: 1.1rem;
-$padding-section: 5rem 1rem;
-$padding-section-lg: 4rem 8rem;
-$padding-section-xl: 1rem 16rem;
-$input-width-sm: 20%; // Adjust this for the smaller screen size
+@use '../utils/variables' as *;
 
 .work {
   &__section {
     background-color: $primary-color;
     text-align: center;
-    color: $secondary-color;
+    color: $white-color;
     padding: $padding-section;
   }
-
-  // &__section-content {
-  //   // No changes, based on HTML provided
-  // }
 
   &__content {
     &-heading {
